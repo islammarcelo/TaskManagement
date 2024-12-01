@@ -68,6 +68,7 @@ Added two user and  three tasks at database by default
 - username: eslamadel , password: 1234 -> role is ADMIN
 - username: eslamadel676 , password: 1234 -> role is REQULAR_USER
 - anyone can login by any user
+- anyone can import Task Management.postman_collection.json to postman to can test project.
 
   
 
