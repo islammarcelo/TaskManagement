@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/task_management
+    tomcat:
+      initSQL: SET NAMES 'utf8_general_ci'
+    username: postgres
+    password: Admin@123
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-default.sql
+    enabled: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    username: islam@innosoft.sa
+    password: mfeodyokyetjsvhp
+    port: 587
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+
+sql:
+  syntax_pgs: true
+
+server:
+  port: 8080
+
+security:
+  require_ssl: false
+
+
+# JWT
+app:
+  jwtSecret: 67c970948af47d44a426dc1eee6aedd33ebebd1c3e52832bd56658bf7b46bde08fccf4373e05092695116f4e3e5c5606bfb74ddbd7f994562fbf64b64d5691861fede6db11b08acc8b79cbed3481675ff9a8278b001ff8602a5c0faa334ecda0b0eb695da932b59996179d73b7c1938a67b724e1c71397827b258889250f11610202681c4834c1a30e696d3a70ce6fda078f003c5bca2177797bcc2ccd1935321534915bd3d2256227b7fae90b73114ff6120387615f847de799ba7d2e94ce3be7f5c00f27bab66bf57c4b15ae13137d24514be6b925d9cc85fac1aef52b6a18d335231dfb85b370cfc7b793e42378d2b41da90660b326e7de145c335e2327a3
+  jwtExpirationInMs: 604800000
+
+
+
+                      
